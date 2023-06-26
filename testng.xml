@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Parallel Test Suite" parallel="tests" thread-count="2">
+	<listeners>
+		<listener class-name="com.atmecs.SensorTesting.utils.ExtentReport"/>
+	</listeners>	
+    <test name="Test 1">
+        <classes>
+            <class name="com.atmecs.SensorTesting.testscripts.FirstSensorTest" />
+        </classes>
+    </test>
+    <test name="Test 2">
+        <classes>
+            <class name="com.atmecs.SensorTesting.testscripts.SecondSensorTest" />
+        </classes>
+    </test>
+    <!-- Add more tests as needed -->
+</suite>
